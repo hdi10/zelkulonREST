@@ -13,7 +13,7 @@ public class ProductControllerTestsuite {
     @Test
     void  gutTest1(){
 
-        ProductController pC =  new ProductController();
+        //ProductController pC =  new ProductController();
 
         //pC.pR.findAll();
         //spC.getProducts();

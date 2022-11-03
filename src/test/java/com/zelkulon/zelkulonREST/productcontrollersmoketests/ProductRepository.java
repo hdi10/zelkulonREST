@@ -1,13 +1,11 @@
 package com.zelkulon.zelkulonREST.productcontrollersmoketests;
 
 import com.opencsv.bean.CsvToBeanBuilder;
-import com.zelkulon.zelkulonREST.productcontrollersmoketests.Product;
-import jdk.dynalink.linker.LinkerServices;
+import com.zelkulon.zelkulonREST.prototyp.Product;
 import org.springframework.stereotype.Repository;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.net.URI;
 import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
