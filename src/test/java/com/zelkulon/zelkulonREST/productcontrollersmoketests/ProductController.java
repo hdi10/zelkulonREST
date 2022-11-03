@@ -1,12 +1,10 @@
 package com.zelkulon.zelkulonREST.productcontrollersmoketests;
 
+import com.fasterxml.jackson.databind.util.JSONWrappedObject;
 import com.zelkulon.zelkulonREST.prototyp.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -31,4 +29,16 @@ public class ProductController {
     public ResponseEntity<List<Product>> getProducts() {
         return ResponseEntity.ok(this.pR.findAll());
     }
+
+    //TODO
+    @PostMapping("/")
+    public Product addProduct(JSONWrappedObject jsonWrappedObject){
+        return null;
+    }
+
+    @DeleteMapping ("/{id}")
+    public void deleteProduct(@PathVariable(value = "id") Integer id){
+
+    }
+
 }
