@@ -1,0 +1,12 @@
+﻿id,productNr,productGroup,productModel,price,hasSdSlot,productBrand,ean,tEan,productSpecs,productDescription
+1,123032,3,"Samsung s5",100.00,true,"Samsung",312312412,312312412,LOG_TestProductSpecs,LOG_TestProductDescription,
+2,123033,15,Samsung s10,200.00,true,Samsung,512521542,512521542,LOG_TestProductSpecs,LOG_TestProductDescription,42
+3,123034,15,Samsung s20,300.00,true,Samsung,512345123,512345123,LOG_TestProductSpecs,LOG_TestProductDescription,63
+4,123035,15,Samsung s22,400.00,false,Samsung,942774135,942774135,LOG_TestProductSpecs,LOG_TestProductDescription,23
+5,123036,17,Apple Iphone 8,200.00,false,Apple,648235887,648235887,LOG_TestProductSpecs,LOG_TestProductDescription,34
+6,123037,17,Apple Iphone X,300.00,false,Apple,882032892,882032892,LOG_TestProductSpecs,LOG_TestProductDescription,342
+7,123038,1,Apple Iphone 12,800.00,false,Apple,237432868,237432868,LOG_TestProductSpecs,LOG_TestProductDescription,234
+8,123039,1,Apple Iphone 13,1200.00,false,Apple,778323553,778323553,LOG_TestProductSpecs,LOG_TestProductDescription,532
+9,123040,1, Samsung Zfold2,400.00,true,Samsung,787239442,787239442,LOG_TestProductSpecs,LOG_TestProductDescription,234
+10,123041,3,Google Pixel,500.00,true,Google,666777888,666777888,LOG_TestProductSpecs,LOG_TestProductDescription,2
+11,123042,2,Samsung ZFold,300.00,true,Samsung,231442442,231442442,LOG_TestProductSpecs,LOG_TestProductDescription,3
