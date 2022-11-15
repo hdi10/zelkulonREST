@@ -5,35 +5,42 @@ package com.zelkulon.zelkulonREST.smartphone;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.zelkulon.zelkulonREST.warehouse.Warehouse;
 import lombok.*;
-import org.hibernate.annotations.Table;
-import org.springframework.data.annotation.Id;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Positive;
 
 import javax.persistence.*;
 
 @Entity
+@NoArgsConstructor
 @AllArgsConstructor
 @Builder
 @Data
-
-@Table(appliesTo = "Smartphone", comment = "Smartphone")
 public class Smartphone {
 
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         private Long id;
 
-        @Column(name = "productNr")
-        private long productNr;
+        @NotBlank(message = "Name is mandatory")
+        private int productNr;
 
-
+        @NotBlank(message = "productGroup is mandatory")
         @Column(name = "productGroup")
         private int productGroup;
 
 
-
+        @NotBlank(message = "productModel is mandatory")
         @Column(name ="productModel")
         private String productModel;
 
+        @Positive(message = "Price needs to be positive")
         @Column(name = "price")
         private float price;
 
