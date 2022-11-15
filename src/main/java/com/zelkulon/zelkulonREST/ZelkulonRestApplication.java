@@ -13,78 +13,90 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 //@EnableAutoConfiguration(exclude = {ErrorMvcAutoConfiguration.class})
-public class ZelkulonRestApplication implements CommandLineRunner{
-
-    private static Logger LOG = LoggerFactory
-            .getLogger(SpringApplication.class);
+public class ZelkulonRestApplication{
 
     public static void main(String[] args) {
-        LOG.info("STARTING THE APPLICATION");
         SpringApplication.run(ZelkulonRestApplication.class, args);
-        LOG.info("APPLICATION FINISHED");
     }
 
     @Bean
-    public CommandLineRunner demo(SmartphoneRepository smartphoneRepository, WarehouseRepository warehouseRepository) {
+    public CommandLineRunner zelkulonRest(SmartphoneRepository smartphoneRepository, WarehouseRepository warehouseRepository) {
         return (args) -> {
             Warehouse warehouse = warehouseRepository.save(Warehouse.builder().name("LagerOne").build());
             smartphoneRepository.save(Smartphone
                     .builder()
-                    .productNr(123032)
-                    .productGroup(3)
-                    .productModel("Samsung_s5")
-                    .price(100)
-                    .hasSdSlot(true)
-                    .productBrand("Samsung")
-                    .ean(312312412)
-                    .tEan(312312412)
-                    .productSpecs("LOG_TestProductSpecs")
-                    .productDescription("LOG_TestProductDescription")
+                    .name("Chicken Boneless (ohne Knochen)")
+                    .description("1) Plain no sauce 2) Sweet chili (Peanut topping) 3) Soy garlic 4) Super spicy 5) Soy wasabi")
+                    .currency("EUR")
+                    .category("food")
+                    .price(12.50F)
                     .warehouse(warehouse)
                     .build());
+//                    .builder()
+//                    .productNr(1232)
+//                    .productGroup(3)
+//                    .productModel("Samsung_s5")
+//                    .price(100F)
+//                    //.hasSdSlot(true)
+//                    //.productBrand("Samsung")
+//                    //.ean(312312412)
+//                    //.tEan(312312412)
+//                    //.productSpecs("LOG_TestProductSpecs")
+//                    //.productDescription("LOG_TestProductDescription")
+//                    .warehouse(warehouse)
+//                    .build());
 
             smartphoneRepository.save(Smartphone
                     .builder()
-                    .productNr(123034)
-                    .productGroup(15)
-                    .productModel("Samsung_s20")
-                    .price(300)
-                    .hasSdSlot(true)
-                    .productBrand("Samsung")
-                    .ean(512345123)
-                    .tEan(512345123)
-                    .productSpecs("LOG_TestProductSpecs")
-                    .productDescription("LOG_TestProductDescription")
+                    .name("Chicken Cuts (mit Knochen)")
+                    .description("1) Plain no sauce 2) Sweet chili (Peanut topping) 3) Soy garlic 4) Super spicy 5) Soy wasabi")
+                    .currency("EUR")
+                    .category("food")
+                    .price(12.00F)
                     .warehouse(warehouse)
                     .build());
+//                    .builder()
+//                    .productNr(1234)
+//                    .productGroup(15)
+//                    .productModel("Samsung_s20")
+//                    .price(300F)
+////                    .hasSdSlot(true)
+////                    .productBrand("Samsung")
+////                    .ean(512345123)
+////                    .tEan(512345123)
+////                    .productSpecs("LOG_TestProductSpecs")
+////                    .productDescription("LOG_TestProductDescription")
+//                    .warehouse(warehouse)
+//                    .build());
 
             smartphoneRepository.save(Smartphone
                     .builder()
-                    .productNr(123035)
-                    .productGroup(15)
-                    .productModel("Samsung_s22")
-                    .price(400)
-                    .hasSdSlot(false)
-                    .productBrand("Samsung")
-                    .ean(942774135)
-                    .tEan(942774135)
-                    .productSpecs("LOG_TestProductSpecs")
-                    .productDescription("LOG_TestProductDescription")
+                    .name("Beef Dumpling")
+                    .description("BBQ Beef Fried Dumpling (4 PCS)")
+                    .currency("EUR")
+                    .category("side")
+                    .price(6.50F)
                     .warehouse(warehouse)
                     .build());
+//                    .builder()
+//                    .productNr(1230)
+//                    .productGroup(15)
+//                    .productModel("Samsung_s22")
+//                    .price(400F)
+////                    .hasSdSlot(false)
+////                    .productBrand("Samsung")
+////                    .ean(942774135)
+////                    .tEan(942774135)
+////                    .productSpecs("LOG_TestProductSpecs")
+////                    .productDescription("LOG_TestProductDescription")
+//                    .warehouse(warehouse)
+//                    .build());
 
         };
 
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        LOG.info("EXECUTING : command line runner");
 
-        for (int i = 0; i < args.length; ++i) {
-            LOG.info("args[{}]: {}", i, args[i]);
-        }
-    }
 }
 
 

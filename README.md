@@ -17,5 +17,5 @@ mvn clean package
 **Start project**
 
 ```bash
-java -jar target/demo-0.0.1-SNAPSHOT.jar
+java -jar target/zelkulonREST-0.0.1-SNAPSHOT.jar
 ```

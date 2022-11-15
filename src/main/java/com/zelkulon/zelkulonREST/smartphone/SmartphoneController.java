@@ -22,13 +22,9 @@ public class SmartphoneController {
     SmartphoneRepository smartphoneRepository;
 
     @GetMapping("/{id}")
-    public ResponseEntity<Smartphone> getProductById(@PathVariable(value =
-            "id") Long id) {
-
+    public ResponseEntity<Smartphone> getProductById(@PathVariable(value = "id") Long id) {
         Optional<Smartphone> product = this.smartphoneRepository.findById(id);
-
-        return product.isEmpty()?ResponseEntity.notFound().build() :
-                ResponseEntity.ok(product.get());
+        return product.isEmpty()?ResponseEntity.notFound().build() : ResponseEntity.ok(product.get());
     }
 
 
@@ -43,8 +39,7 @@ public class SmartphoneController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Smartphone> deleteById(@PathVariable(value =
-            "id") Long id) {
+    public ResponseEntity<Smartphone> deleteById(@PathVariable(value = "id") Long id) {
         Optional<Smartphone> product = this.smartphoneRepository.findById(id);
         this.smartphoneRepository.deleteById(id);
         return product.isEmpty() ? ResponseEntity.notFound().build() :
