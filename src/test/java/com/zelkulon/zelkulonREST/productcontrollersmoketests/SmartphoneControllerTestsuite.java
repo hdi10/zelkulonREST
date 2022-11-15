@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-public class ProductControllerTestsuite {
+public class SmartphoneControllerTestsuite {
 
 
     @Test
