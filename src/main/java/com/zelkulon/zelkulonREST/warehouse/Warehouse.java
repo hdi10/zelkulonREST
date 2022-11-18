@@ -21,7 +21,6 @@ import java.util.List;
 public class Warehouse {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false)
     private Long id;
 
     @NotBlank(message = "Name is mandatory")

@@ -29,7 +29,7 @@ public class WarehouseController {
     }
 
     @GetMapping("")
-    public ResponseEntity<List<Warehouse>> getRestaurants() {
+    public ResponseEntity<List<Warehouse>> getWarehouses() {
         return ResponseEntity.ok(this.warehouseRepository.findAll());
     }
 }
