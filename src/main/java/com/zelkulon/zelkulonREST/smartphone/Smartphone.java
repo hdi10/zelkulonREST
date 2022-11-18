@@ -29,38 +29,19 @@ public class Smartphone {
         private Long id;
 
         @NotBlank(message = "Name is mandatory")
-        private int productNr;
+        private String name;
 
-        @NotBlank(message = "productGroup is mandatory")
-        @Column(name = "productGroup")
-        private int productGroup;
-
-
-        @NotBlank(message = "productModel is mandatory")
-        @Column(name ="productModel")
-        private String productModel;
+        private String description = "";
 
         @Positive(message = "Price needs to be positive")
-        @Column(name = "price")
-        private float price;
+        private Float price;
 
-        @Column(name = "hasSdSlot")
-        private boolean hasSdSlot;
+        @NotBlank(message = "Currency is mandatory")
+        private String currency;
 
-        @Column(name = "productBrand")
-        private String productBrand;
+        @NotBlank(message = "Category is mandatory")
+        private String category;
 
-        @Column(name = "ean")
-        private long ean;
-
-        @Column(name = "tEan")
-        private long tEan;
-
-        @Column(name = "productSpecs")
-        private String productSpecs;
-
-        @Column(name = "productDescription")
-        private String productDescription;
 
         @ManyToOne
         @JoinColumn(name = "warehouse_id", nullable=false)
