@@ -1,12 +1,13 @@
-#version: '3.5'
-#
-#services:
-#  db:
-#     image: postgres:12
-#     restart: always
-#     environment:
-#        POSTGRES_USER: user
-#        POSTGRES_PASSWORD: pwd
-#        POSTGRES_DB: phonesdb
-#     ports:
-#        - 5432:5432
+# Build step, where we copy our code to the image and build our service application
+FROM maven:3.6.3-openjdk-17 AS build
+
+WORKDIR /app
+COPY . /app
+RUN mvn clean package -DskipTests
+
+# Copy jar from build image to production image for running application
+FROM openjdk:17
+WORKDIR /app
+COPY --from=build /app/target/zelkulonREST-0.0.1-SNAPSHOT.jar /app
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "/app/zelkulonREST0.0.1-SNAPSHOT.jar"]
