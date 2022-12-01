@@ -10,4 +10,4 @@ FROM openjdk:17
 WORKDIR /app
 COPY --from=build /app/target/zelkulonREST-0.0.1-SNAPSHOT.jar /app
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "/app/zelkulonREST0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "/app/zelkulonREST-0.0.1-SNAPSHOT.jar"]
