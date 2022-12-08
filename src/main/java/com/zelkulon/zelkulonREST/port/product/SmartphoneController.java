@@ -1,17 +1,13 @@
-package com.zelkulon.zelkulonREST.smartphone;
+package com.zelkulon.zelkulonREST.port.product;
 
-import com.zelkulon.zelkulonREST.warehouse.WarehouseRepository;
+import com.zelkulon.zelkulonREST.core.domain.model.Smartphone;
+import com.zelkulon.zelkulonREST.core.domain.service.interfaces.SmartphoneRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.FieldError;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 @Validated

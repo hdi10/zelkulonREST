@@ -2,7 +2,7 @@ package com.zelkulon.zelkulonREST.productcontrollersmoketests;
 
 
 
-import com.zelkulon.zelkulonREST.warehouse.WarehouseRepository;
+import com.zelkulon.zelkulonREST.core.domain.service.interfaces.WarehouseRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;

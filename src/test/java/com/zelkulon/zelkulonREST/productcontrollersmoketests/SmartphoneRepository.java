@@ -1,5 +1,5 @@
 //package com.zelkulon.zelkulonREST.productcontrollersmoketests;
-//import com.zelkulon.zelkulonREST.smartphone.Smartphone;
+//import com.zelkulon.zelkulonREST.core.domain.model.Smartphone;
 //import org.springframework.data.jpa.repository.JpaRepository;
 //import org.springframework.stereotype.Repository;
 //@Repository

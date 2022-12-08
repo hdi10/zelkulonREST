@@ -1,15 +1,13 @@
 package com.zelkulon.zelkulonREST;
 
-import com.zelkulon.zelkulonREST.smartphone.Smartphone;
-import com.zelkulon.zelkulonREST.warehouse.Warehouse;
-import com.zelkulon.zelkulonREST.warehouse.WarehouseRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.zelkulon.zelkulonREST.core.domain.model.Smartphone;
+import com.zelkulon.zelkulonREST.core.domain.model.Warehouse;
+import com.zelkulon.zelkulonREST.core.domain.service.interfaces.WarehouseRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import com.zelkulon.zelkulonREST.smartphone.SmartphoneRepository;
+import com.zelkulon.zelkulonREST.core.domain.service.interfaces.SmartphoneRepository;
 
 
 @SpringBootApplication

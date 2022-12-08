@@ -1,5 +1,6 @@
-package com.zelkulon.zelkulonREST.smartphone;
+package com.zelkulon.zelkulonREST.core.domain.service.interfaces;
 
+import com.zelkulon.zelkulonREST.core.domain.model.Smartphone;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,10 +1,7 @@
 /**
  * 11 Model.values()
  */
-package com.zelkulon.zelkulonREST.smartphone;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.zelkulon.zelkulonREST.warehouse.Warehouse;
-import lombok.*;
+package com.zelkulon.zelkulonREST.core.domain.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -14,8 +11,6 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Positive;
-
-import javax.persistence.*;
 
 @Entity
 @NoArgsConstructor

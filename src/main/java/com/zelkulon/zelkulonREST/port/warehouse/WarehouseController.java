@@ -1,8 +1,10 @@
 /**
  * Dastekin created on 15.11.2022 the WarehouseController-Class inside the package - com.zelkulon.zelkulonREST.warehouse
  */
-package com.zelkulon.zelkulonREST.warehouse;
+package com.zelkulon.zelkulonREST.port.warehouse;
 
+import com.zelkulon.zelkulonREST.core.domain.model.Warehouse;
+import com.zelkulon.zelkulonREST.core.domain.service.interfaces.WarehouseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;

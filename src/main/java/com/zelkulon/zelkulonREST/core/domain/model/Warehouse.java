@@ -1,9 +1,8 @@
 /**
  * Dastekin created on 15.11.2022 the Restaurant-Class inside the package - com.zelkulon.zelkulonREST.abstractfactory
  */
-package com.zelkulon.zelkulonREST.warehouse;
+package com.zelkulon.zelkulonREST.core.domain.model;
 
-import com.zelkulon.zelkulonREST.smartphone.Smartphone;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

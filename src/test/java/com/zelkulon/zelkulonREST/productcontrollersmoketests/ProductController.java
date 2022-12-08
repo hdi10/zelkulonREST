@@ -1,8 +1,8 @@
 //package com.zelkulon.zelkulonREST.productcontrollersmoketests;
 //
 //import com.fasterxml.jackson.databind.util.JSONWrappedObject;
-//import com.zelkulon.zelkulonREST.smartphone.Smartphone;
-//import com.zelkulon.zelkulonREST.smartphone.SmartphoneRepository;
+//import com.zelkulon.zelkulonREST.core.domain.model.Smartphone;
+//import com.zelkulon.zelkulonREST.core.domain.service.interfaces.SmartphoneRepository;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.http.ResponseEntity;
 //import org.springframework.web.bind.annotation.*;
