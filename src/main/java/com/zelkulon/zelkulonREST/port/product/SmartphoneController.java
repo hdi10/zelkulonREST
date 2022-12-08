@@ -1,5 +1,7 @@
-package com.zelkulon.zelkulonREST.smartphone;
+package com.zelkulon.zelkulonREST.port.product;
 
+import com.zelkulon.zelkulonREST.smartphone.Smartphone;
+import com.zelkulon.zelkulonREST.smartphone.SmartphoneRepository;
 import com.zelkulon.zelkulonREST.warehouse.WarehouseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
